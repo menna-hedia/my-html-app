@@ -13,7 +13,7 @@ jobs:
         run: docker login --username ${{ secrets.DOCKER_USERNAME }}  --password ${{ secrets.DOCKER_PASS_TOKEN }} 
 
       - name: "Build Docker image"
-        run: docker docker build -t ${{ secrets.DOCKER_USERNAME }}/my-html-app2 .
+        run: docker docker build -it ${{ secrets.DOCKER_USERNAME }}/my-html-app2 .
 
       - name: "Push to Dockerhub"
         run: docker docker push ${{ secrets.DOCKER_USERNAME }}/my-html-app2
