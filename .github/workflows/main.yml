@@ -16,7 +16,7 @@ jobs:
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/my-html-app2 .
 
       - name: "Push to Dockerhub"
-        run: docker docker push ${{ secrets.DOCKER_USERNAME }}/my-html-app2
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/my-html-app2
 
 
 
