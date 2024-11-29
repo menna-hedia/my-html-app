@@ -1,17 +1,17 @@
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: 'Testing Github action'
-      run: pwd
+    steps:
+      - name: 'Testing Github action'
+        run: pwd
 
-    - name: 'Testing Github printing'
-      run: echo Menna
+      - name: 'Testing Github printing'
+        run: echo Menna
 
 
 
